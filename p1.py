@@ -4,5 +4,5 @@ while x > 0:
     while y > 0:
         y-=1
         print (y)
-    x-=1
+    x-=1 # почему x что то значит если y взял у него инпут значение
 print ("Stopped, please")
