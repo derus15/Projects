@@ -1,0 +1,7 @@
+a, b = int(input('Введите число: a')), int(input('Введите число: b'))
+print('Выберите операцию', '\n''1.Умножение', '\n' '2.Сложение')
+s = int(input())
+if s == 1:
+    print(a * b)
+elif s == 2:
+    print(a + b)
