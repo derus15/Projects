@@ -4,10 +4,6 @@ let hide = document.querySelector('.hide')
 let img = document.querySelector('img')
 let en_score = document.querySelector('.en_score')
 
-function getRandomArbitrary(min, max) {
-  return Math.random() * (max - min) + min;
-}
-
 button_1.onclick = function() {
   class_1.textContent ++;
    if (class_1.textContent === '10') {
