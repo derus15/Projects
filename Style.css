@@ -1,0 +1,55 @@
+html{
+    padding: 30px;
+
+}
+
+.body_class{
+    font-size: 30px;
+    padding: 10px;
+    line-height: 60px;
+}
+
+.score_num{
+    position: relative;
+    left: 130px;
+    bottom: 59px;
+}
+
+.score{
+    left: 20px;
+}
+
+.en_num{
+    position: relative;
+    bottom: 50px;
+    right: 1px;
+}
+
+.en_score{
+    position: relative;
+    bottom: 109px;
+    left: 180px;
+}
+
+.body_button{
+    position: relative;
+}
+
+.button_1{
+    width: 200px;
+    height: 90px;
+    position: absolute;
+    left: 650px;
+    bottom: 50px;
+    font-size: larger;
+}
+
+.circle{
+    position: relative;
+    left: 550px;
+    bottom: 120px;
+}
+
+.hide{
+    display: none;
+}
