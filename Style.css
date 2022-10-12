@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Noto+Sans+Mono&display=swap');
+
 html{
     padding: 30px;
-
+    margin: 0;
 }
 
 .body_class{
@@ -9,26 +11,42 @@ html{
     line-height: 60px;
 }
 
+.level_let{
+    position: relative;
+    width:100px;
+    right: -640px;
+    bottom: 230px;
+    font-size: 30px;
+}
+
+.level_num{
+    position: relative;
+    bottom:550px;
+    left: 760px;
+}
+
 .score_num{
     position: relative;
-    left: 130px;
+    left: 165px;
     bottom: 59px;
 }
 
-.score{
-    left: 20px;
+.score_let{
+    font-family: 'Noto Sans Mono', monospace;
+
+}
+
+.en_let{
+    font-family: 'Noto Sans Mono', monospace;
+    position: relative;
+    bottom: 60px;
+    right: 1px;
 }
 
 .en_num{
     position: relative;
-    bottom: 50px;
-    right: 1px;
-}
-
-.en_score{
-    position: relative;
-    bottom: 109px;
-    left: 180px;
+    bottom: 119px;
+    left: 235px;
 }
 
 .body_button{
@@ -36,20 +54,23 @@ html{
 }
 
 .button_1{
+    font-family: 'Noto Sans Mono', monospace;
     width: 200px;
     height: 90px;
     position: absolute;
-    left: 650px;
+    left: 670px;
     bottom: 50px;
     font-size: larger;
 }
 
 .circle{
+    border-radius: 50%;
+    background: black;
     position: relative;
     left: 550px;
     bottom: 120px;
 }
 
 .hide{
-    display: none;
+    border-radius: 30%;
 }
