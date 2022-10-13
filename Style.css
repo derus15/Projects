@@ -12,17 +12,18 @@ html{
 }
 
 .level_let{
+    font-family: 'Noto Sans Mono', monospace;
     position: relative;
-    width:100px;
-    right: -640px;
-    bottom: 230px;
+    width: 100px;
+    right: -620px;
+    bottom: 234px;
     font-size: 30px;
 }
 
 .level_num{
     position: relative;
-    bottom:550px;
-    left: 760px;
+    bottom:291px;
+    left: 770px;
 }
 
 .score_num{
@@ -53,22 +54,30 @@ html{
     position: relative;
 }
 
+
 .button_1{
     font-family: 'Noto Sans Mono', monospace;
     width: 200px;
     height: 90px;
-    position: absolute;
-    left: 670px;
-    bottom: 50px;
+    position: relative;
+    left: 617px;
+    bottom: 150px;
     font-size: larger;
+    border-width: 15px;
+    border-color: darkred;
+    border-radius: 10%;
 }
 
 .circle{
+    height: 10em;
+    width: 10em;
     border-radius: 50%;
     background: black;
+    text-align: center;
     position: relative;
-    left: 550px;
-    bottom: 120px;
+    margin: 0 auto;
+    bottom:240px;
+
 }
 
 .hide{
