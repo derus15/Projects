@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Noto+Sans+Mono&display=swap');
 
+
 html{
     padding: 30px;
     margin: 0;
@@ -11,43 +12,57 @@ html{
     line-height: 60px;
 }
 
-.level_let{
+.container_stat{
     font-family: 'Noto Sans Mono', monospace;
-    position: relative;
-    width: 100px;
-    right: -620px;
-    bottom: 234px;
-    font-size: 30px;
+    display: flex;
+    width: 300px;
+    height: 200px;
+    flex-direction: column;
+    justify-content: normal;
+    margin-top: auto;
 }
 
-.level_num{
-    position: relative;
-    bottom:291px;
-    left: 770px;
+.container_score{
+    display:flex;
+}
+
+.container_en{
+    display:flex;
+}
+
+.container_lev{
+    font-family: 'Noto Sans Mono', monospace;
+    display: flex;
+    position: absolute;
+    top:50px;
+    left: 670px;
 }
 
 .score_num{
     position: relative;
-    left: 165px;
-    bottom: 59px;
+    order: 3;
+    margin-left: 5px;
 }
 
 .score_let{
-    font-family: 'Noto Sans Mono', monospace;
 
 }
 
 .en_let{
-    font-family: 'Noto Sans Mono', monospace;
-    position: relative;
-    bottom: 60px;
-    right: 1px;
+
 }
 
 .en_num{
     position: relative;
-    bottom: 119px;
-    left: 235px;
+    margin-left: 5px;
+}
+
+.level_let{
+
+}
+
+.level_num{
+    margin-left: 5px;
 }
 
 .body_button{
@@ -56,12 +71,11 @@ html{
 
 
 .button_1{
-    font-family: 'Noto Sans Mono', monospace;
     width: 200px;
     height: 90px;
     position: relative;
-    left: 617px;
-    bottom: 150px;
+    left: 610px;
+    top: 290px;
     font-size: larger;
     border-width: 15px;
     border-color: darkred;
@@ -74,9 +88,10 @@ html{
     border-radius: 50%;
     background: black;
     text-align: center;
-    position: relative;
+    position: fixed;
     margin: 0 auto;
     bottom:240px;
+    left: 610px;
 
 }
 
