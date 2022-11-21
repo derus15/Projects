@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Кнопка</title>
+    <style>
+        .button{
+            position: relative;
+            top:320px;
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            background-color: #7EBDC3;
+            color:white;
+            width: 200px;
+            height: 35px;
+            font-size: 25px;
+            padding-bottom: 10px;
+            border: none;
+        }
+        body{
+            margin: 0;
+        }
+
+        .body_back_1{
+            background: #E1AA7D;
+            height: 100vh;
+        }
+
+        .body_back_2{
+            background-color: #7EBDC3;
+            height: 100vh;
+        }
+
+        .hidden_p{
+            display: none;
+            text-align: center;
+        }
+
+        .small{
+            text-align: center;
+        }
+
+        .middle{
+            font-size:25px;
+        }
+
+        .bigger{
+            font-size:50px;
+        }
+
+        .hidden_s{
+            display:none;
+        }
+
+        .end{
+            display: block;
+            text-align: center;
+            font-size: 50px;
+        }
+
+    </style>
+</head>
+<body>
+<div class="body_back_1">
+<input class = 'button' type="button" value="нажми на меня">
+<p class = "hidden_p">Еще!</p>
+<span class = hidden_s>Прекрасно, ты нажал меня 10 раз</span>
+</div>
+<script>
+    let button = document.querySelector('.button');
+    let div = document.querySelector('div');
+    let counter = 0;
+    let p = document.querySelector('p')
+    let span = document.querySelector('span')
+    button.onclick = function (){
+        div.classList.toggle('body_back_1');
+        div.classList.toggle('body_back_2');
+        p.classList.remove('hidden_p');
+        p.classList.add('small');
+        counter ++;
+        if (counter === 3){
+           p.classList.add('middle');
+        }
+       if (counter === 6){
+           p.classList.add('bigger');
+        }
+       if (counter >= 10){
+           p.classList.remove('bigger', 'middle', 'small');
+           p.classList.add('hidden_p');
+           span.classList.remove('hidden_s');
+           span.classList.add('end');
+        }
+    }
+</script>
+</body>
+</html>
