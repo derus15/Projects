@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Кнопка</title>
     <style>
+        
         .button{
             position: relative;
             top:320px;
@@ -17,6 +18,7 @@
             font-size: 30px;
             border: none;
         }
+        
         body{
             margin: 0;
         }
@@ -58,20 +60,36 @@
             font-size: 50px;
         }
 
+        .art_cat{
+            position: absolute;
+            top: 500px;
+            left: 600px;
+            font-size: 55px;
+            width:100px;
+        }
+
+        .hidden_cat{
+            display:none;
+        }
+
     </style>
 </head>
 <body>
 <div class="body_back_1">
 <input class = 'button' type="button" value="нажми на меня">
 <p class = "hidden_p">Еще!</p>
-<span class = hidden_s>Прекрасно, ты нажал меня 10 раз</span>
+<span class = hidden_s>Прекрасно, ты нажал меня 10 раз. Можешь посмотреть на котика</span>
+<figure class = 'hidden_cat'>^..^_==_~~</figure>
 </div>
 <script>
+    
     let button = document.querySelector('.button');
     let div = document.querySelector('div');
     let counter = 0;
-    let p = document.querySelector('p')
-    let span = document.querySelector('span')
+    let p = document.querySelector('p');
+    let span = document.querySelector('span');
+    let figure = document.querySelector('figure')
+
     button.onclick = function (){
         div.classList.toggle('body_back_1');
         div.classList.toggle('body_back_2');
@@ -89,6 +107,8 @@
            p.classList.add('hidden_p');
            span.classList.remove('hidden_s');
            span.classList.add('end');
+           figure.classList.add('art_cat');
+           figure.classList.remove('hidden_cat');
         }
     }
 </script>
