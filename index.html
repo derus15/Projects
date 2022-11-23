@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <title>Кнопка</title>
     <style>
-        
         .button{
             position: relative;
             top:320px;
@@ -18,7 +17,6 @@
             font-size: 30px;
             border: none;
         }
-        
         body{
             margin: 0;
         }
@@ -72,45 +70,56 @@
             display:none;
         }
 
+        .counter{
+            position: absolute;
+            left:760px;
+            top:450px;
+            font-size: 45px;
+        }
+
     </style>
 </head>
 <body>
 <div class="body_back_1">
 <input class = 'button' type="button" value="нажми на меня">
 <p class = "hidden_p">Еще!</p>
-<span class = hidden_s>Прекрасно, ты нажал меня 10 раз. Можешь посмотреть на котика</span>
 <figure class = 'hidden_cat'>^..^_==_~~</figure>
 </div>
 <script>
-    
     let button = document.querySelector('.button');
     let div = document.querySelector('div');
-    let counter = 0;
+    let counter_num = 0;
     let p = document.querySelector('p');
     let span = document.querySelector('span');
     let figure = document.querySelector('figure')
+    let counter = document.createElement('span')
 
     button.onclick = function (){
         div.classList.toggle('body_back_1');
         div.classList.toggle('body_back_2');
         p.classList.remove('hidden_p');
         p.classList.add('small');
-        counter ++;
-        if (counter === 3){
+        counter_num ++;
+        if (counter_num === 3){
            p.classList.add('middle');
         }
-       if (counter === 6){
+       if (counter_num === 6){
            p.classList.add('bigger');
         }
-       if (counter >= 10){
-           p.classList.remove('bigger', 'middle', 'small');
-           p.classList.add('hidden_p');
-           span.classList.remove('hidden_s');
-           span.classList.add('end');
+       if (counter_num >= 10){
+           p.classList.remove('bigger');
+           p.innerHTML = 'Прекрасно, ты нажал меня 10 раз. Можешь посмотреть на котика'
            figure.classList.add('art_cat');
            figure.classList.remove('hidden_cat');
         }
-    }
+       if (counter_num >= 15) {
+           button.before(counter);
+           p.innerHTML = 'Ладно, вот тебе счетчик'
+           figure.classList.add('hidden_cat');
+           counter.className = 'counter';
+           counter.innerHTML = counter_num;
+       }
+}
 </script>
 </body>
 </html>
