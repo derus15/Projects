@@ -38,18 +38,6 @@
             text-align: center;
         }
 
-        .small{
-            text-align: center;
-        }
-
-        .middle{
-            font-size:25px;
-        }
-
-        .bigger{
-            font-size:50px;
-        }
-
         .art_cat{
             position: absolute;
             top: 500px;
@@ -75,38 +63,38 @@
 <div class="body_back_1">
 <input class = 'button' type="button" value="нажми на меня">
 <p class = "hidden_p">Еще!</p>
-<figure class = ' art_cat hidden_cat'>^..^_==_~~</figure>
+<figure class = 'art_cat hidden_cat'>^..^_==_~~</figure>
 </div>
 <script>
+    
     let button = document.querySelector('.button');
     let div = document.querySelector('div');
-    let counter_num = 0;
     let p = document.querySelector('p');
     let span = document.querySelector('span');
     let figure = document.querySelector('figure')
     let counter = document.createElement('span')
+    let counter_num = 0;
 
     button.onclick = function (){
         div.classList.toggle('body_back_1');
         div.classList.toggle('body_back_2');
         p.classList.remove('hidden_p');
-        p.classList.add('small');
+        p.style.textAlign = 'center';
         counter_num ++;
         if (counter_num === 3){
-           p.classList.add('middle');
+           p.style.fontSize = '25px';
         }
         if (counter_num === 6){
-           p.classList.add('bigger');
+           p.style.fontSize = '50px';
         }
         if (counter_num >= 10){
-           p.classList.remove('bigger');
            p.innerHTML = 'Прекрасно, ты нажал меня 10 раз. Можешь посмотреть на котика';
            figure.classList.remove('hidden_cat');
         }
         if (counter_num >= 15) {
            button.before(counter);
            p.innerHTML = 'Ладно, вот тебе счетчик';
-           figure.classList.add('hidden_cat');
+           figure.classList.add('hidden_cat')
            counter.className = 'counter';
            counter.innerHTML = counter_num;
        }
