@@ -1,0 +1,61 @@
+body{
+    padding: 40px;
+    margin: 0;
+    background-color: #BFD7EA;
+}
+
+figure{
+}
+
+/* стирание стрелок поля ввода*/
+
+.len_in {
+  -moz-appearance: textfield;
+}
+.len_in::-webkit-inner-spin-button {
+  display: none;
+}
+
+/**/
+
+[contenteditable="true"]:focus,
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+ul{
+    list-style-type: none;
+    margin-top:450px;
+}
+
+.len_s{
+    position: absolute;
+    left:40vw;
+    top:20vh;
+    font-family: Candara, serif;
+    font-size: 30px;
+}
+
+input{
+    position: absolute;
+    left:50vw;
+    top:40vh;
+    width:70px;
+    border:none;
+    background-color: #BFD7EA;
+    font-size: 20px;
+}
+
+button{
+    position: absolute;
+    left:46vw;
+    top:55vh;
+    font-size: 15px;
+}
+
+.password{
+    text-align: center;
+}
