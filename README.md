@@ -1,4 +1,4 @@
 # Проекты сделанные за 3 дня
 
 
-Таймер https://derus15.github.io/Projects/ 
+Первоначальная версия генератора паролей https://derus15.github.io/Projects/ 
