@@ -1,0 +1,55 @@
+body{
+    background-color: #85D55D;
+}
+
+
+.box {
+    position: absolute;
+    top:35vh;
+    left:38vw;
+    padding: 0;
+    display: flex;
+    font-size: 85px;
+    font-family: "Igra Sans", serif;
+}
+
+[contenteditable="true"]:focus,
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+.btn{
+    position: absolute;
+    top:55vh;
+    left:52vw;
+    padding: 0;
+    height: 30px;
+    width: 80px;
+    font-size: 20px;
+    border: none;
+    background-color: #BB0A21;
+}
+
+.btn_d{
+    position: absolute;
+    top:55vh;
+    left:42vw;
+    padding: 0;
+    height: 30px;
+    width: 80px;
+    font-size: 20px;
+    border: none;
+    background-color: #BB0A21;
+
+}
+
+.btn:hover, .btn_d:hover{
+    background-color: #40CB9A;
+}
+
+.btn:active, .btn_d:active{
+    background-color: #BB0A21;
+}
